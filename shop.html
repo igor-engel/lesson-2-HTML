@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="shopStyle.css">
+    <title>Title</title>
+</head>
+
+<body>
+<h1>Заявка на монтаж</h1>
+
+<hr/>
+
+<form action="/someAddress.php" method="post">
+
+    <h2>Виды работ</h2>
+
+    <hr/>
+
+    <p>
+        Требуемые работы:<br>
+        <input type="checkbox" id="roof" name="roof">
+        <label for="roof">Кровля</label><br>
+        <input type="checkbox" id="front" name="front">
+        <label for="front">Фасад</label><br>
+        <input type="checkbox" id="decor" name="decor">
+        <label for="decor">Декоративные элементы</label>
+    </p>
+
+    <p>
+        Материал кровли:<br>
+        <input type="radio" id="plate" name="roof">
+        <label for="plate">Профлист</label><br>
+        <input type="radio" id="roofTiles" name="roof">
+        <label for="roofTiles">Металлочерепица</label><br>
+        <input type="radio" id="bitumen" name="roof">
+        <label for="bitumen">Гибкая черепица</label>
+    </p>
+
+    <p>
+        Материал фасада:<br>
+        <input type="radio" id="vinyl" name="front">
+        <label for="vinyl">Винил</label><br>
+        <input type="radio" id="metal" name="front">
+        <label for="metal">Металл</label><br>
+        <input type="radio" id="wood" name="front">
+        <label for="wood">Дерево</label>
+    </p>
+
+    <p>
+        <label for="country">Страна производитель:</label><br>
+        <select id="country" name="country">
+            <option value="russia">Россия</option>
+            <option value="china">США</option>
+            <option value="germany">Германия</option>
+            <option value="france">Франция</option>
+            <option value="finland">Финляндия</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="color">Цвет материала:</label><br>
+        <select multiple="multiple" id="color" name="country">
+            <option value="white">Белый</option>
+            <option value="black">Чёрный</option>
+            <option value="grey">Серый</option>
+            <option value="brown">Коричневый</option>
+            <option value="orange">Оранжевый</option>
+        </select>
+    </p>
+
+    <hr/>
+
+    <h2>Контактные данные</h2>
+
+    <hr/>
+
+    <p>
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name">
+    </p>
+
+    <p>
+        Адрес:<br>
+        <label>
+            <textarea rows="4" cols="45" name="text"></textarea>
+        </label>
+    </p>
+
+    <p>
+        <label for="email">Ваш Email:</label><br>
+        <input type="email" id="email" name="email">
+    </p>
+
+    <p>
+        <label for="tel">Ваш телефон:</label><br>
+        <input type="tel" id="tel" name="tel">
+    </p>
+
+    <p>
+        <input type="submit" value="Отправить заявку">
+    </p>
+
+    <hr/>
+    
+    <a target="_blank" href="price.html">
+        Открыть прайс лист
+    </a>
+
+</form>
+</body>
+</html>
